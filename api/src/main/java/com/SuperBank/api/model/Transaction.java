@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
@@ -11,6 +12,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "transaction_bank")
 @Entity
 public class Transaction {
 
@@ -18,14 +20,11 @@ public class Transaction {
     @Id
     private UUID id;
     private Double transactionValue;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime creationDate;
 
-    @ManyToOne
-    @JoinColumn(name = "idSender")
-    private User sender;
-
-    @ManyToOne
-    @JoinColumn(name = "idReceiver")
-    private User receiver;
+    private UUID sender;
+    private UUID receiver;
 
 }

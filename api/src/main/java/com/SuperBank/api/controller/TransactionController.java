@@ -1,23 +1,26 @@
 package com.SuperBank.api.controller;
 
 import com.SuperBank.api.model.Transaction;
+import com.SuperBank.api.model.dtos.TransactionDTO;
 import com.SuperBank.api.repository.TransactionRepository;
+import com.SuperBank.api.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/transaction")
 public class TransactionController {
 
     @Autowired
-    TransactionRepository repository;
+    TransactionService service;
 
-    public ResponseEntity<Transaction> creatTransaction(@RequestBody Transaction transaction){
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public ResponseEntity<TransactionDTO> creatTransaction(@RequestBody TransactionDTO transactionDTO){
 
-        Transaction createdTransaction = repository.save(transaction);
+        TransactionDTO createdTransaction = service.creatTransaction(transactionDTO);
 
         return  ResponseEntity.status(200).body(createdTransaction);
     }
