@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import java.util.Objects;
 import java.util.UUID;
 
 @Data
@@ -23,5 +24,6 @@ public class Person  {
     private String cpf;
     private String name;
     private String email;
+
 
 }
