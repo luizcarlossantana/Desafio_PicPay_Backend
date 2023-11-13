@@ -2,6 +2,7 @@ package com.SuperBank.api.model.dtos;
 
 import lombok.Data;
 
+
 import java.util.UUID;
 @Data
 public class CompanyDTO {
@@ -10,4 +11,7 @@ public class CompanyDTO {
     private String cnpj;
     private String name;
     private String email;
+
+
+
 }
