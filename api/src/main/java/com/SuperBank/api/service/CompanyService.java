@@ -47,5 +47,11 @@ public class CompanyService {
         }
         }
 
+
+    }
+
+    public List<Company> buscarTodos(){
+       return repository.findAll();
+
     }
 }

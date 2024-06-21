@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -22,6 +23,9 @@ public class Company {
     private String cnpj;
     private String name;
     private String email;
+    @ManyToMany
+    @JoinTable
+    private List<Person> personList;
 
 
     @Override

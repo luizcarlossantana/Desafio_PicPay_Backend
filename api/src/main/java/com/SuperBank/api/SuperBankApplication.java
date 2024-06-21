@@ -16,4 +16,5 @@ public class SuperBankApplication {
 	public ModelMapper modelMapper(){
 		return new ModelMapper();
 	}
+
 }
