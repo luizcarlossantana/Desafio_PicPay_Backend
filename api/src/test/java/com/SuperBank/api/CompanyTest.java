@@ -4,7 +4,10 @@ import com.SuperBank.api.model.Company;
 import com.SuperBank.api.model.Person;
 import com.SuperBank.api.repository.CompanyRepository;
 import com.SuperBank.api.repository.PersonRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -14,15 +17,18 @@ import java.util.List;
 @SpringBootTest
 public class CompanyTest {
 
-    @Autowired
+    @Mock
     PersonRepository personRepository;
 
-    @Autowired
+    @Mock
     CompanyRepository companyRepository;
 
-
+@BeforeEach
+void setup() {
+    MockitoAnnotations.initMocks(this);
+}
     @Test
-    public void criandoCompany(){
+    public void criandoCompany() {
         Person person = new Person();
         List<Person> personList = new ArrayList<>();
         person.setName("fulana");
@@ -30,7 +36,6 @@ public class CompanyTest {
         person.setEmail("luiz@gamil.com");
 
         personRepository.save(person);
-
 
 
         Company company = new Company();

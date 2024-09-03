@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1bd4b605-f773-436d-a705-8a76ae0fecae" name="Changes" comment="utilizando spring batch para processar dados">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/JobCompletionNotificationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/com/SuperBank/api/FilePermissionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/BatchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/model/Insumo.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/model/Insumo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/service/ExcelItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/service/ExcelItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/com/SuperBank/api/CompanyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/com/SuperBank/api/CompanyTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2Y390e6mVzTGH5cIzAJl5azHEu2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.SuperBankApplication.executor": "Debug",
+    "JUnit.CompanyTest.criandoCompany.executor": "Run",
+    "JUnit.FilePermissionTest.testFilePermissions.executor": "Debug",
+    "JUnit.FornecedorTest.criarFornecedor.executor": "Debug",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.SuperBankApplication.executor": "Run",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/luizc/Documents/UNIESP/P5/devops_P5/crud",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.SuperBankApplication">
+    <configuration name="SuperBankApplication" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.SuperBank.api.SuperBankApplication" />
+      <module name="api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyTest.criandoCompany" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.SuperBank.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.SuperBank.api" />
+      <option name="MAIN_CLASS_NAME" value="com.SuperBank.api.CompanyTest" />
+      <option name="METHOD_NAME" value="criandoCompany" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilePermissionTest.testFilePermissions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.SuperBank.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.SuperBank.api" />
+      <option name="MAIN_CLASS_NAME" value="com.SuperBank.api.FilePermissionTest" />
+      <option name="METHOD_NAME" value="testFilePermissions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FornecedorTest.criarFornecedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.SuperBank.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.SuperBank.api" />
+      <option name="MAIN_CLASS_NAME" value="com.SuperBank.api.FornecedorTest" />
+      <option name="METHOD_NAME" value="criarFornecedor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperBankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.SuperBank.api.SuperBankApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FilePermissionTest.testFilePermissions" />
+        <item itemvalue="JUnit.FornecedorTest.criarFornecedor" />
+        <item itemvalue="JUnit.CompanyTest.criandoCompany" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bd4b605-f773-436d-a705-8a76ae0fecae" name="Changes" comment="" />
+      <created>1699743175640</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699743175640</updated>
+      <workItem from="1713214642484" duration="6918000" />
+      <workItem from="1714000539978" duration="6760000" />
+      <workItem from="1714919482657" duration="3028000" />
+      <workItem from="1718927998482" duration="8741000" />
+      <workItem from="1719000243216" duration="15898000" />
+      <workItem from="1719087771576" duration="19586000" />
+      <workItem from="1719669479394" duration="510000" />
+      <workItem from="1719671988901" duration="23000" />
+      <workItem from="1721342781675" duration="8605000" />
+      <workItem from="1721954033860" duration="1345000" />
+      <workItem from="1721956954912" duration="4985000" />
+      <workItem from="1724881167230" duration="1545000" />
+    </task>
+    <task id="LOCAL-00001" summary="comite inicial, começando fazendo testes pq estava dando erro">
+      <created>1699753032309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699753032309</updated>
+    </task>
+    <task id="LOCAL-00002" summary="criação dos DTOS">
+      <created>1699812707238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699812707238</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Colocando a configuração do ModelMapper">
+      <created>1699812745367</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699812745367</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Criação das classes Services">
+      <created>1699812799177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699812799177</updated>
+    </task>
+    <task id="LOCAL-00005" summary="alteração no controller por conta dos dtos.">
+      <created>1699812898028</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699812898028</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rescrevi o equals e hashcode nas classes models">
+      <created>1699834819367</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699834819367</updated>
+    </task>
+    <task id="LOCAL-00007" summary="criando dtos especifico para os gets.">
+      <created>1699834953264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699834953264</updated>
+    </task>
+    <task id="LOCAL-00008" summary="criando exceptions personalizadas">
+      <created>1699835000413</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699835000413</updated>
+    </task>
+    <task id="LOCAL-00009" summary="criando validação para o metodo creatCompany">
+      <created>1699835065425</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699835065425</updated>
+    </task>
+    <task id="LOCAL-00010" summary="utilizando spring batch para processar dados">
+      <option name="closed" value="true" />
+      <created>1719012701102</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719012701102</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="comite inicial, começando fazendo testes pq estava dando erro" />
+    <MESSAGE value="criação dos DTOS" />
+    <MESSAGE value="Colocando a configuração do ModelMapper" />
+    <MESSAGE value="Criação das classes Services" />
+    <MESSAGE value="alteração no controller por conta dos dtos." />
+    <MESSAGE value="Rescrevi o equals e hashcode nas classes models" />
+    <MESSAGE value="criando dtos especifico para os gets." />
+    <MESSAGE value="criando exceptions personalizadas" />
+    <MESSAGE value="criando validação para o metodo creatCompany" />
+    <MESSAGE value="utilizando spring batch para processar dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="utilizando spring batch para processar dados" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/service/ExcelItemReader.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/api/src/main/java/com/SuperBank/api/controller/CompanyController.java</url>
+          <line>101</line>
+          <properties class="com.SuperBank.api.controller.CompanyController" method="importFile">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

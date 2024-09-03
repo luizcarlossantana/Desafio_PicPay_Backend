@@ -1,0 +1,6 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšíúÿÿÿÿ8ïæÅ¥¼1
+^
+java:S1128"<Remove this unused import 'com.SuperBank.api.model.Company'.(†íµ¿úÿÿÿÿ8…¸ù¥¼1
+h
+java:S1128"KRemove this unused import 'com.SuperBank.api.repository.CompanyRepository'.(Û÷ÿÆ8…¸ù¥¼1
